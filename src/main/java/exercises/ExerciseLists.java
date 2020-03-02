@@ -1,6 +1,5 @@
 package exercises;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.*;
 
@@ -10,14 +9,14 @@ public class ExerciseLists {
      *
      */
     static int sum(List<Integer> ints) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * Calculates the mean/average of the elements
      */
     static double mean(List<Integer> ints) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -27,21 +26,21 @@ public class ExerciseLists {
      * (this is the population variance)
      */
     static double variance(List<Integer> ints) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * returns a new, reversed list of numbers
      */
     static List<Integer> reverseList(List<Integer> ints) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * reverses the given string
      */
     static String reverseString(String s) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -53,21 +52,21 @@ public class ExerciseLists {
      *
      */
     static String histogram(List<Integer> ints) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * creates a list of lengths from a list of words*
      */
     static List<Integer> wordLengths(List<String> words) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * finds the longest word in a list of words
      */
     static String findLongestWord(List<String> words) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -75,7 +74,7 @@ public class ExerciseLists {
      * and returns the values as floats in a list.
      */
     static List<Double> extractColumn(String text, int columnNumber) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     static boolean pythagoreanTriple(int a, int b, int c) {
@@ -88,7 +87,7 @@ public class ExerciseLists {
      * with 2 <= a,b,c < n
      */
     static List<List<Integer>> findPythagoreanTriples(int n) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -107,6 +106,6 @@ public class ExerciseLists {
      *
      */
     static Map<Character, Integer> getCharFrequencies(String s) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 }

@@ -1,13 +1,13 @@
 package exercises;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class ExerciseNumbersAndStrings {
     /**
      * Adds a and b and returns the result
      */
     static int add(int a, int b) {
-        throw new NotImplementedException();
+        int sum = a+b;
+        return sum;
     }
 
     /**
@@ -16,7 +16,7 @@ public class ExerciseNumbersAndStrings {
      * Result:  123456 (as a number)
      */
     static int concatDigits(int a, int b) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -26,14 +26,14 @@ public class ExerciseNumbersAndStrings {
      * countDigits(123) -> 3
      */
     static int countDigits(int a) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * calculates the distance between (x1, y1) und (x2, y2)
      */
     static double distance(double x1, double y1, double x2, double y2) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -43,7 +43,7 @@ public class ExerciseNumbersAndStrings {
      * implement my_round without using round
      */
     static float myRound(float x) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -53,7 +53,7 @@ public class ExerciseNumbersAndStrings {
      * implement my_round without using round
      */
     static double myRound(double x) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -61,7 +61,7 @@ public class ExerciseNumbersAndStrings {
      * return false otherwise
      */
     static boolean isDivsible(int n, int d) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -69,14 +69,14 @@ public class ExerciseNumbersAndStrings {
      * Hint: Google for Euklidian algorithm
      */
     static int gcd(int a, int b) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * Convert degrees to radians ("Grad in Bodenmaß")
      */
     static double radians(double radians) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -84,7 +84,7 @@ public class ExerciseNumbersAndStrings {
      * float numbers a and b is smaller than epsilon
      */
     static boolean closeEnough(double a, double b, double epsilon) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -95,7 +95,7 @@ public class ExerciseNumbersAndStrings {
      * binary(15) returns "1111"
      */
     static String binary(int n) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -103,6 +103,6 @@ public class ExerciseNumbersAndStrings {
      * hint: look at Math.random or java.util.Random
      */
     static int dice() {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 }

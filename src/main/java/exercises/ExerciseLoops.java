@@ -1,7 +1,5 @@
 package exercises;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 import java.util.List;
 
 public class ExerciseLoops {
@@ -12,7 +10,7 @@ public class ExerciseLoops {
      * (use an if statement, not any builtin functions)
      */
     static int max(int a, int b) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -23,7 +21,7 @@ public class ExerciseLoops {
      * - if the number is divisble by 3 and 5, return "fizzbuzz" instead
      */
     static String fizzbuzz(int n) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -35,7 +33,7 @@ public class ExerciseLoops {
      * return 0 if a > b
      */
     static int summationWhile(int a, int b) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -47,21 +45,21 @@ public class ExerciseLoops {
      * return 0 if a > b
      */
     static int summationFor(int a, int b) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * Return true if c is a vowel (a,e,i,o,u), false otherwise
      */
     static boolean isVowel(char c) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
      * return the number of vowels in string s
      */
     static int countVowels(String s) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -77,7 +75,7 @@ public class ExerciseLoops {
      * palindrome('abcbb') -> False
      */
     static boolean palindrome(String s) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -93,6 +91,6 @@ public class ExerciseLoops {
      *
      */
     static List<Integer> threeNPlusOne(int n) {
-        throw new NotImplementedException();
+        throw new RuntimeException("not implemented");
     }
 }
