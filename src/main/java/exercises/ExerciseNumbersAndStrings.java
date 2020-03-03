@@ -1,6 +1,8 @@
 package exercises;
 
 
+import java.util.Random;
+
 public class ExerciseNumbersAndStrings {
     /**
      * Adds a and b and returns the result
@@ -16,7 +18,13 @@ public class ExerciseNumbersAndStrings {
      * Result:  123456 (as a number)
      */
     static int concatDigits(int a, int b) {
-        throw new RuntimeException("not implemented");
+       // int ret =  a.to + b;
+        String s1 = Integer.toString(a);
+        String s2 = Integer.toString(b);
+        String s3 = s1 + s2;
+        int ret = Integer.parseInt(s3);
+        return ret;
+       // throw new RuntimeException("not implemented");
     }
 
     /**
@@ -33,7 +41,14 @@ public class ExerciseNumbersAndStrings {
      * calculates the distance between (x1, y1) und (x2, y2)
      */
     static double distance(double x1, double y1, double x2, double y2) {
-        throw new RuntimeException("not implemented");
+        //assertEquals(Math.sqrt(2), ExerciseNumbersAndStrings.distance(1, 1, 2, 2), 1e-5);
+        double distX = x2 - x1;
+        double distY = y2 - y1;
+        double ret = java.lang.Math.sqrt((distX * distX ) + (distY * distY));
+        System.out.println(ret);
+        return  ret;
+        //assertEquals(1, ExerciseNumbersAndStrings.distance(0, 1, 0, 0), 1e-5);
+        //throw new RuntimeException("not implemented");
     }
 
     /**
@@ -61,7 +76,15 @@ public class ExerciseNumbersAndStrings {
      * return false otherwise
      */
     static boolean isDivsible(int n, int d) {
-        throw new RuntimeException("not implemented");
+        if ( n % d == 0 ) {
+            return true;
+        } else
+        {
+            return false;
+        }
+
+
+        //throw new RuntimeException("not implemented");
     }
 
     /**
@@ -69,7 +92,19 @@ public class ExerciseNumbersAndStrings {
      * Hint: Google for Euklidian algorithm
      */
     static int gcd(int a, int b) {
-        throw new RuntimeException("not implemented");
+     //   assertEquals(4, ExerciseNumbersAndStrings.gcd(12,8));
+        if (a == 0)
+            return b;
+
+        while (b != 0) {
+            if (a > b)
+                a = a - b;
+            else
+                b = b - a;
+        }
+
+        return a;
+       // throw new RuntimeException("not implemented");
     }
 
     /**
@@ -95,7 +130,11 @@ public class ExerciseNumbersAndStrings {
      * binary(15) returns "1111"
      */
     static String binary(int n) {
-        throw new RuntimeException("not implemented");
+
+        String ret = Integer.toBinaryString(n);
+        System.out.println(ret);
+        return  ret;
+        //throw new RuntimeException("not implemented");
     }
 
     /**
@@ -103,6 +142,9 @@ public class ExerciseNumbersAndStrings {
      * hint: look at Math.random or java.util.Random
      */
     static int dice() {
-        throw new RuntimeException("not implemented");
+        Random r = new Random();
+        int test = r.nextInt(6);
+        return test + 1;
+      //  throw new RuntimeException("not implemented");
     }
 }
