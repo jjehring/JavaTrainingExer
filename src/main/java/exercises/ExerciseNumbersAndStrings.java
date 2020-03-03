@@ -1,6 +1,7 @@
 package exercises;
 
 
+import java.awt.font.GraphicAttribute;
 import java.util.Random;
 
 public class ExerciseNumbersAndStrings {
@@ -40,9 +41,9 @@ public class ExerciseNumbersAndStrings {
              b = a * -1 ;
         }
         System.out.println("digits: " + b);
-        //return Math.abs(b);
-       int length = String.valueOf(b).length();
-       return length;
+        return (""+Math.abs(a)).length();
+       //int length = String.valueOf(b).length();
+       //return length;
 
 //        throw new RuntimeException("not implemented");
     }
@@ -55,10 +56,12 @@ public class ExerciseNumbersAndStrings {
         double distX = x2 - x1;
         double distY = y2 - y1;
         double ret = java.lang.Math.sqrt((distX * distX ) + (distY * distY));
+
         System.out.println(ret);
         return  ret;
         //assertEquals(1, ExerciseNumbersAndStrings.distance(0, 1, 0, 0), 1e-5);
         //throw new RuntimeException("not implemented");
+
     }
 
     /**
@@ -69,6 +72,7 @@ public class ExerciseNumbersAndStrings {
      */
     static float myRound(float x) {
         return Math.round(x);
+        //return int nr = (int)(x+0.5f)
 //        throw new RuntimeException("not implemented");
     }
 
@@ -92,6 +96,7 @@ public class ExerciseNumbersAndStrings {
      * return false otherwise
      */
     static boolean isDivsible(int n, int d) {
+        //return n % d ==0 ;
         if ( n % d == 0 ) {
             return true;
         } else
@@ -127,7 +132,8 @@ public class ExerciseNumbersAndStrings {
      * Convert degrees to radians ("Grad in Bodenmaß")
      */
     static double radians(double radians) {
-        throw new RuntimeException("not implemented");
+        return radians /180 * Math.PI;
+        //throw new RuntimeException("not implemented");
     }
 
     /**
@@ -135,7 +141,8 @@ public class ExerciseNumbersAndStrings {
      * float numbers a and b is smaller than epsilon
      */
     static boolean closeEnough(double a, double b, double epsilon) {
-        throw new RuntimeException("not implemented");
+        return Math.abs(a-b) < epsilon;
+        //throw new RuntimeException("not implemented");
     }
 
     /**
@@ -147,6 +154,7 @@ public class ExerciseNumbersAndStrings {
      */
     static String binary(int n) {
 
+        //return Integer.toString(n,2);
         String ret = Integer.toBinaryString(n);
         System.out.println(ret);
         return  ret;
@@ -158,9 +166,10 @@ public class ExerciseNumbersAndStrings {
      * hint: look at Math.random or java.util.Random
      */
     static int dice() {
-        Random r = new Random();
-        int test = r.nextInt(6);
-        return test + 1;
+        return (int) (Math.random()*6 + 1 );
+        //Random r = new Random();
+        //int test = r.nextInt(6);
+        //return test + 1;
       //  throw new RuntimeException("not implemented");
     }
 
