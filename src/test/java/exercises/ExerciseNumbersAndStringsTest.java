@@ -102,4 +102,8 @@ class ExerciseNumbersAndStringsTest {
 
         assertEquals(targetSet, set);
     }
+
+    @Test
+    void dice2() {
+    }
 }

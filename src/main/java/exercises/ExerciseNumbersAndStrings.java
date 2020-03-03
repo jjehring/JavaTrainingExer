@@ -34,7 +34,17 @@ public class ExerciseNumbersAndStrings {
      * countDigits(123) -> 3
      */
     static int countDigits(int a) {
-        throw new RuntimeException("not implemented");
+        int b = a;
+       // return Math.abs(a);
+        if ( a < 0 ) {
+             b = a * -1 ;
+        }
+        System.out.println("digits: " + b);
+        //return Math.abs(b);
+       int length = String.valueOf(b).length();
+       return length;
+
+//        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -58,7 +68,8 @@ public class ExerciseNumbersAndStrings {
      * implement my_round without using round
      */
     static float myRound(float x) {
-        throw new RuntimeException("not implemented");
+        return Math.round(x);
+//        throw new RuntimeException("not implemented");
     }
 
     /**
@@ -68,8 +79,13 @@ public class ExerciseNumbersAndStrings {
      * implement my_round without using round
      */
     static double myRound(double x) {
-        throw new RuntimeException("not implemented");
+
+        return Math.round(x);
+     //   throw new RuntimeException("not implemented");
     }
+
+
+
 
     /**
      * return true if n is divisible by d
@@ -146,5 +162,12 @@ public class ExerciseNumbersAndStrings {
         int test = r.nextInt(6);
         return test + 1;
       //  throw new RuntimeException("not implemented");
+    }
+
+    static int dice2() {
+        Random r = new Random();
+        int test = r.nextInt(6);
+        return test + 1;
+        //  throw new RuntimeException("not implemented");
     }
 }
